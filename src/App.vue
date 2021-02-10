@@ -2,9 +2,12 @@
   <v-app>
     <v-app-bar
       app
-      color=""
+      color="white"
       dark
     >
+    
+    <a >
+      <h3> Jobber</h3></a>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -14,7 +17,7 @@
           transition="scale-transition"
           width="40"
         />
-
+        
         <v-img
           alt="Vuetify Name"
           class="shrink mt-1 hidden-sm-and-down"
@@ -25,8 +28,12 @@
         />
       </div>
 
-      <v-spacer></v-spacer>
-
+      <v-spacer class= red></v-spacer>
+          <a>Login</a>
+          
+      <v-divider class="vertical"></v-divider>
+      <!-- <span></span> -->
+          <a>Register</a>
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
