@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="white"
+      color="black-2"
       dark
     >
     
@@ -27,46 +27,43 @@
           width="100"
         />
       </div>
- <!-- <v-col
-        class="mb-5"
-        cols="4"
-      > -->
-       <!-- <v-row justify="left"> -->
+        
       
-          <a>Login</a>
+         
           <v-spacer ></v-spacer>
-      <!-- <v-divider class="vertical"></v-divider> -->
+      <!-- <v-divider class="horizontal"></v-divider> -->
        <!-- <span></span> -->
-          <a>Register</a>
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
+          <a> Register </a>
+
+          <v-btn
+        :disabled="loading"
+        class="ma- "
+        color="white"
+        
+        plain
       >
-      
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        Login
       </v-btn>
-       <!-- </v-row> -->
-    <!-- </v-col> -->
+
+     
     </v-app-bar>
 
     <v-main>
       <HelloWorld/>
-      <Counter/>
+      <!-- <Counter/> -->
     </v-main>
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
-    Counter
+    // Counter
   },
 
   data: () => ({
