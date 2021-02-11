@@ -8,8 +8,8 @@
 </template>
 
  <script>
- import Vue from 'vue',
-import Vuex from 'vuex'
+ 
+
 
         export default {
     name: 'Counter',
@@ -17,7 +17,7 @@ import Vuex from 'vuex'
     data: () => ({
         computed: {
     count () {
-	    return store.state.count
+	return this.$store.state.count
     },
      methods: {
           increment() {
