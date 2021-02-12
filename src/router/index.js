@@ -1,35 +1,31 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import Main from "../containers/Main";
-import Home from "../views/Home.vue";
-import SignUp from "../views/SignUp";
-import Jobs from "../views/JobList"
+// import Main from "../containers/Main";
+import App from "../App.vue";
+import SignIn from "../views/SignIn";
+import Register from "../views/Register"
 
 Vue.use(VueRouter);
 
 let routes = [
   {
     path: "/",
-    redirect: "/home",
-    name: "main",
-    component: Main,
+    redirect: "/",
+    name: "App",
+    component: App,
     children: [
       {
-        path: "/home",
-        name: "name",
-        component: Home
+        path: "/signin",
+        name: "signin",
+        component: SignIn
       },
       {
-        path: "/join",
-        name: "signup",
-        component: SignUp
+        path: "/register",
+        name: "register",
+        component: Register
       },
-      {
-        path: "/jobs",
-        name: "jobs",
-        component: Jobs
-      }
+      
     ]
   }
 ];
