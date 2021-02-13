@@ -7,7 +7,10 @@
     >
     
     <a >
-      <h3> Jobber</h3></a>
+      <router-link to = "/">
+      <h3> Jobber</h3>
+      </router-link>
+      </a>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -33,24 +36,32 @@
           <v-spacer ></v-spacer>
       <!-- <v-divider class="horizontal"></v-divider> -->
        <!-- <span></span> -->
+        <router-link to = "/">
           <a> Register </a>
+        </router-link>
+
+
+          <router-link to="/">
 
           <v-btn
         :disabled="loading"
         class="ma- "
         color="white"
-        
         plain
       >
+      
         Login
-      </v-btn>
+       <!-- </router-link> -->
+      </v-btn> 
 
-     
+        </router-link>
+
     </v-app-bar>
-
+ <router-view></router-view>
     <v-main>
       <HelloWorld/>
       <Counter/>
+      <SignIn/>
     </v-main>
   </v-app>
 </template>
@@ -58,12 +69,14 @@
 <script>
 import HelloWorld from './components/HelloWorld';
 import Counter from './components/Counter';
+import SignIn from './views/SignIn'
 export default {
   name: 'App',
 
   components: {
     HelloWorld,
-    Counter
+    Counter,
+    SignIn,
   },
 
   data: () => ({
