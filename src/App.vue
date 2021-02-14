@@ -37,6 +37,12 @@
       <!-- <v-divider class="horizontal"></v-divider> -->
        <!-- <span></span> -->
         <router-link to = "/">
+         <v-icon
+          dark
+          right
+        >
+          mdi-checkbox-marked-circle
+        </v-icon>
           <a> Register </a>
         </router-link>
 
@@ -81,6 +87,9 @@ export default {
 
   data: () => ({
     //
+    methods:{
+      loading: false
+    }
   }),
 };
 </script>
