@@ -85,10 +85,10 @@ export default {
     SignIn,
   },
 
-  data: () => ({
+  data:() => ({
     //
     methods:{
-      loading: false
+     disabled: true
     }
   }),
 };
