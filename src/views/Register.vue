@@ -1,19 +1,21 @@
 
 <template>
-<div>
+<div class="mx-auto">
 <!-- <v-spacer></v-spacer> -->
-
+<v-col
+          cols="12"
+          sm="12"
+          md="12"
+        >
+  <h1
+   
+        >Register Component </h1>
   <h1>Register Component </h1>
   <h1>Register Component </h1>
   <h1>Register Component </h1>
   <h1>Register Component </h1>
-  <h1>Register Component </h1>
-  <h1>Register Component </h1>
-  <h1>Register Component </h1>
-  <h1>Register Component </h1>
-  <h1>Register Component </h1>
-  <h1>Register Component </h1>
-
+ 
+</v-col>
    <v-card
     class="mx-auto"
     max-width="344"
@@ -28,16 +30,17 @@
           md="12"
         >
         <v-text-field
-            label="solo"
+            label="FirstName"
             solo 
-            placeholder="Dense & Rounded"
+            placeholder="FirstName"
             dense
           ></v-text-field>
 
              <v-text-field
-            label="Solo"
+            label="LastName"
             single-line
             solo
+            placeholder="LasttName"
           ></v-text-field>
         </v-col>
       </v-row>
