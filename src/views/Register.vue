@@ -5,6 +5,10 @@
 
 <script>
 export default {
+  components: {
+  
+   
+  },
   name: 'Register',
 }
 </script>

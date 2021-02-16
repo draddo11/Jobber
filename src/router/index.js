@@ -4,14 +4,15 @@ import VueRouter from "vue-router";
 // import Main from "../containers/Main";
 import App from "../App.vue";
 import SignIn from "../views/SignIn";
-import Register from "../views/Register"
+import Register from "../views/Register";
+import Home from "../containers/Home.vue";
 
 Vue.use(VueRouter);
 
 let routes = [
   {
     path: "/",
-    redirect: "/",
+    redirect: "/home",
     name: "App",
     component: App,
     children: [
@@ -25,7 +26,11 @@ let routes = [
         name: "register",
         component: Register
       },
-      
+      {
+        path: "/home",
+        name: "home",
+        component: Home
+      },
     ]
   }
 ];

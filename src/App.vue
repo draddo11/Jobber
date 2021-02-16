@@ -7,7 +7,7 @@
     >
     
     <a >
-      <router-link to = "/">
+      <router-link to = "/home">
       <h3> Jobber</h3>
       </router-link>
       </a>
@@ -36,7 +36,7 @@
           <v-spacer ></v-spacer>
       <!-- <v-divider class="horizontal"></v-divider> -->
        <!-- <span></span> -->
-        <router-link to = "/">
+        <router-link to = "/register">
          <v-icon
           dark
           right
@@ -47,17 +47,17 @@
         </router-link>
 
 
-          <router-link to="/">
+          <router-link to="/signin">
 
           <v-btn
-        :disabled="loading"
+       
         class="ma- "
         color="white"
         plain
       >
       
         Login
-       <!-- </router-link> -->
+      
       </v-btn> 
 
         </router-link>
@@ -65,30 +65,34 @@
     </v-app-bar>
  <router-view></router-view>
     <v-main>
-      <HelloWorld/>
-      <Counter/>
-      <SignIn/>
+       <div class="d-flex align-center">
+      <!-- <Home/> -->
+       </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Counter from './components/Counter';
-import SignIn from './views/SignIn'
+// import Home from './containers/Home';
+// import Counter from './components/Counter';
+// import SignIn from './views/SignIn';
+// import Register from './views/Register';
+
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
-    Counter,
-    SignIn,
+    // Home,
+    // Counter,
+    // SignIn,
+    // Register,
   },
 
   data:() => ({
     //
     methods:{
-     disabled: true
+     disabled: true,
+     loading:true
     }
   }),
 };
