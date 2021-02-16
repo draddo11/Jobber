@@ -24,16 +24,20 @@
       <v-row>
         <v-col
           cols="12"
-          sm="6"
-          md="4"
+          sm="12"
+          md="12"
         >
         <v-text-field
             label="solo"
             solo 
             placeholder="Dense & Rounded"
-            filled
-            rounded
             dense
+          ></v-text-field>
+
+             <v-text-field
+            label="Solo"
+            single-line
+            solo
           ></v-text-field>
         </v-col>
       </v-row>
