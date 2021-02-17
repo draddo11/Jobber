@@ -13,7 +13,7 @@
   <h1>Register Component </h1>
   <h1>Register Component </h1>
   <h1>Register Component </h1>
-  <h1>Register Component </h1>
+  <h1>Signup with us to post and apply for Jobs </h1>
  
 </v-col>
    <v-card
