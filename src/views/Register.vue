@@ -40,7 +40,7 @@
             label="LastName"
             single-line
             solo
-            placeholder="LasttName"
+            placeholder="LastName"
           ></v-text-field>
         </v-col>
       </v-row>
