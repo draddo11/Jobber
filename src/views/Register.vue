@@ -38,23 +38,35 @@
           md="12"
         >
         <v-text-field
-            label="FirstName"
+          label="First name"
             solo 
             placeholder="FirstName"
             dense
+             v-model="firstname"
+              :rules="nameRules"
+              :counter="10"
+              required
           ></v-text-field>
 
              <v-text-field
-            label="LastName"
+           label="Last name"
             single-line
             solo
             placeholder="LastName"
+            v-model="lastname"
+              :rules="nameRules"
+              :counter="10"
+              
+              required
           ></v-text-field>
           <v-text-field
-            label="Email"
+            label="E-mail"
             solo 
             placeholder="Email"
             dense
+             v-model="email"
+              :rules="emailRules"
+              required
           ></v-text-field>
         </v-col>
       </v-row>
@@ -67,11 +79,23 @@
 
 <script>
 export default {
-  components: {
+  components: {},
+   data: () => ({
+    name: 'Register',
+    valid: false,
+    firstname: '',
+    lastname: '',
+    nameRules: [
+      v => !!v || 'Name is required',
+      v => v.length <= 10 || 'Name must be less than 10 characters'
+    ],
+    email: '',
+    emailRules: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+/.test(v) || 'E-mail must be valid'
+    ]
+  })
   
-   
-  },
-  name: 'Register',
 }
 </script>
 
