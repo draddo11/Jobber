@@ -68,7 +68,7 @@
               :rules="emailRules"
               required
           ></v-text-field>
-          <v-btn v-text="red">Register</v-btn>
+          <v-btn  color="error">Register</v-btn>
         </v-col>
       </v-row>
     </v-container>
