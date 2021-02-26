@@ -7,10 +7,8 @@
           sm="12"
           md="12"
         >
-  <h1
-   
-        >Register Component </h1>
-  <h1>Register Component </h1>
+  
+  
   <h1>Register Component </h1>
   <h1>Register Component </h1>
   <h1>Signup with us to post and apply for Jobs </h1>
@@ -78,7 +76,13 @@
               :rules="emailRules"
               required
           ></v-text-field>
-          <v-btn  color="error">Register</v-btn>
+          <!-- <v-divider> -->
+          <aside class="text-caption">By selecting Agree and continue below,
+             I agree to Airbnb’s Terms of Service, Payments Terms of Service, 
+             Privacy Policy, and Nondiscrimination Policy </aside>
+          <!-- </v-divider> -->
+
+          <v-btn  color="error">Agree and continue </v-btn>
 
           <v-divider class= "vertical">or</v-divider>
 
@@ -90,7 +94,11 @@
    
         </div>
 </template>
-
+<style scoped>
+#agree{
+  font-size: 13;
+}
+</style>
 <script>
 export default {
   components: {},

@@ -4,7 +4,7 @@
       app
       color="black-2"
       dark
-      fixed
+      dense
     >
     
     <a >
