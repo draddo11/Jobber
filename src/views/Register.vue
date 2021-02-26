@@ -54,7 +54,6 @@
             v-model="lastname"
               :rules="nameRules"
               :counter="10"
-              
               required
           ></v-text-field>
           <v-text-field
@@ -68,7 +67,7 @@
           ></v-text-field>
 
             <v-text-field
-            label="Password"
+            label=" Password "
             solo 
             placeholder="Password"
             dense
@@ -78,7 +77,7 @@
           ></v-text-field>
           <!-- <v-divider> -->
           <aside class="text-caption">By selecting Agree and continue below,
-             I agree to Airbnb’s Terms of Service, Payments Terms of Service, 
+             I agree to Jobber’s Terms of Service, Payments Terms of Service, 
              Privacy Policy, and Nondiscrimination Policy </aside>
           <!-- </v-divider> -->
 
@@ -116,7 +115,7 @@ export default {
       v => !!v || 'E-mail is required',
       v => /.+@.+/.test(v) || 'E-mail must be valid'
     ],
-      password: " ",
+      password: '',
       passwordrules: [
         v => !!v || "Password is required",
         v => (v && v.length >= 6) || "Name must be more than 6 characters"
