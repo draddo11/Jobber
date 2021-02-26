@@ -7,19 +7,20 @@
           sm="12"
           md="12"
         >
+  <br />
+ <br />
+
   
   
-  <h1>Register Component </h1>
-  <h1>Register Component </h1>
-  <h1>Signup with us to post and apply for Jobs </h1>
-  >
+  <h1 v-text="caption">Signup with us to post and apply for Jobs </h1>
+  
     <br />
     <p class="headline font-weight-black">
-      Sign In to manage your current Job boards.
+      Sign Up to manage your current Job board
     </p>
-    <p class="caption font-weight-medium">
+    <!-- <p class="caption font-weight-medium">
       By continuing, you agree to our Terms of Use and Privacy Policy
-    </p>
+    </p> -->
  
 </v-col>
    <v-card
@@ -75,12 +76,12 @@
             :rules="passwordrules"
             required
           ></v-text-field>
-          <!-- <v-divider> -->
+         
           <aside class="text-caption">By selecting Agree and continue below,
              I agree to Jobber’s Terms of Service, Payments Terms of Service, 
              Privacy Policy, and Nondiscrimination Policy </aside>
-          <!-- </v-divider> -->
-
+         
+            <br />
           <v-btn  color="error">Agree and continue </v-btn>
 
           <v-divider class= "vertical">or</v-divider>
