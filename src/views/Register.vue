@@ -68,7 +68,20 @@
               :rules="emailRules"
               required
           ></v-text-field>
+
+            <v-text-field
+            label="Password"
+            solo 
+            placeholder="Password"
+            dense
+             v-model="email"
+              :rules="emailRules"
+              required
+          ></v-text-field>
           <v-btn  color="error">Register</v-btn>
+
+          <v-divider class= "vertical">or</v-divider>
+
         </v-col>
       </v-row>
     </v-container>
