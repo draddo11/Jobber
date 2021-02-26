@@ -72,9 +72,9 @@
             solo 
             placeholder="Password"
             dense
-             v-model="email"
-              :rules="emailRules"
-              required
+            v-model="password"
+            :rules="passwordrules"
+            required
           ></v-text-field>
           <!-- <v-divider> -->
           <aside class="text-caption">By selecting Agree and continue below,
@@ -115,7 +115,12 @@ export default {
     emailRules: [
       v => !!v || 'E-mail is required',
       v => /.+@.+/.test(v) || 'E-mail must be valid'
-    ]
+    ],
+      password: " ",
+      passwordrules: [
+        v => !!v || "Password is required",
+        v => (v && v.length >= 6) || "Name must be more than 6 characters"
+      ]
   })
   
 }
