@@ -65,7 +65,7 @@
         <br />
         <v-col class="text-center" cols="12" sm="12" 
          >
-          <v-btn   color="error"> Log In  </v-btn>
+          <v-btn   block  color="error"> Log In  </v-btn>
             </v-col>
            <br />
            <span class="text-center" cols="12" sm="12">  or </span>
