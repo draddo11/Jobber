@@ -1,38 +1,102 @@
 
 
 <template>
-<div>
-
-
-  <h1> This is the SignIn Component </h1>
-
+<div class="px-4 mx-auto">
+<!-- <v-spacer></v-spacer> -->
+<v-col
+          cols="12"
+          sm="12"
+          md="12"
+        >
+  <br />
+ <br />
 
   
-          <v-btn
-       
-        class="ma- "
-        color="white"
-        plain
-      >
-      
-        Signin page here 
-        
-      
-      </v-btn> 
-
-<!-- <Home/> -->
-</div>
-</template>
-
-<script>
-// import Home from '../containers/Home'
-
-export default {
-   name: 'SignIn',
-  components:{
-    // Home
-  }
+  
+  <h1 v-text="caption">Signup with us to post and apply for Jobs </h1>
+  
+    <br />
+    <p class="headline font-weight-black">
+      Sign In to manage your current Job board
+    </p>
+    <!-- <p class="caption font-weight-medium">
+      By continuing, you agree to our Terms of Use and Privacy Policy
+    </p> -->
  
+</v-col>
+   <v-card
+    class="mx-auto"
+    max-width="344"
+    outlined
+  >
+  <v-form>
+    <v-container>
+      <v-row>
+        <v-col
+          cols="12"
+          sm="12"
+          md="12"
+        >
+        
+          <v-text-field
+            label="E-mail"
+            solo 
+            placeholder="Email"
+            dense
+             v-model="email"
+              :rules="emailRules"
+              required
+          ></v-text-field>
+
+            <v-text-field
+            label=" Password "
+            solo 
+            placeholder="Password"
+            dense
+            v-model="password"
+            :rules="passwordrules"
+            required
+          ></v-text-field>
+<!--          
+          <aside class="text-caption">By selecting Agree and continue below,
+             I agree to Jobber’s Terms of Service, Payments Terms of Service, 
+             Privacy Policy, and Nondiscrimination Policy </aside> -->
+         
+            <br />
+          <v-btn  color="error">Agree and continue </v-btn>
+
+          <v-divider class= "vertical">or</v-divider>
+
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-form>
+   </v-card>
+   
+        </div>
+</template>
+<style scoped>
+
+</style>
+<script>
+export default {
+  components: {},
+   data: () => ({
+    name: 'Register',
+    valid: false,
+    
+    email: '',
+    emailRules: [
+      v => !!v || 'E-mail is required',
+      v => /.+@.+/.test(v) || 'E-mail must be valid'
+    ],
+      password: '',
+      passwordrules: [
+        v => !!v || "Password is required",
+        v => (v && v.length >= 6) || "Name must be more than 6 characters"
+      ]
+  })
+  
 }
 </script>
 
