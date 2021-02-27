@@ -82,10 +82,13 @@
              Privacy Policy, and Nondiscrimination Policy </aside>
          
             <br />
-          <v-btn  color="error">Agree and continue </v-btn>
-
-          <v-divider class= "vertical">or</v-divider>
-
+            <v-col class="text-center" cols="12" sm="12" 
+         >
+          <v-btn color="error">Agree and continue </v-btn>
+           
+             <br>
+                    or
+             </v-col>
         </v-col>
       </v-row>
     </v-container>

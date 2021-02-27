@@ -62,10 +62,13 @@
              I agree to Jobber’s Terms of Service, Payments Terms of Service, 
              Privacy Policy, and Nondiscrimination Policy </aside> -->
          
-            <br />
-          <v-btn  color="error">Agree and continue </v-btn>
-
-          <v-divider class= "vertical">or</v-divider>
+        <br />
+        <v-col class="text-center" cols="12" sm="12" 
+         >
+          <v-btn   color="error"> Log In  </v-btn>
+            </v-col>
+           <br />
+           <span class="text-center" cols="12" sm="12">  or </span>
 
         </v-col>
       </v-row>
