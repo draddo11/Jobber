@@ -82,7 +82,8 @@
 
 </style>
 <script>
- import GoogleLogin from 'vue-google-login';
+//  import GoogleLogin from 'vue-google-login';
+
 export default {
   components: {
    
