@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add vue-cli-plugin-vue-router -D --tilde
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @rmartide/vue-google-login@2.0.5
 
 PATH: 
-  E:\project\vue\Jobber\node_modules\.bin;E:\project\vue\node_modules\.bin;E:\project\node_modules\.bin;E:\node_modules\.bin;C:\Program Files\nodejs;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Onesimus\bin;C:\Python38\Scripts;C:\Python38;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files (x86)\Yarn\bin;C:\Python27;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Onesimus\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs;C:\Users\Onesimus\Videos\PLuralsight videos;C:\youtube-dl;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Ruby26-x64\bin;C:\Ruby25-x64\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.3.3\bin;C:\Users\Onesimus\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\Onesimus\AppData\Local\Programs\Python\Python37-32;C:\Users\Onesimus\AppData\Local\Microsoft\WindowsApps;C:\Users\Onesimus\AppData\Local\GitHubDesktop\bin;C:\Users\Onesimus\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\Onesimus\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Onesimus\AppData\Local\Yarn\bin;C:\flutter\bin;C:\Users\Onesimus\AppData\Roaming\npm
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Onesimus\bin;C:\Python38\Scripts;C:\Python38;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files (x86)\Yarn\bin;C:\Python27;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Onesimus\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs;C:\Users\Onesimus\Videos\PLuralsight videos;C:\youtube-dl;C:\Program Files\MySQL\MySQL Shell 8.0\bin;C:\Ruby26-x64\bin;C:\Ruby25-x64\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.3.3\bin;C:\Users\Onesimus\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\Onesimus\AppData\Local\Programs\Python\Python37-32;C:\Users\Onesimus\AppData\Local\Microsoft\WindowsApps;C:\Users\Onesimus\AppData\Local\GitHubDesktop\bin;C:\Users\Onesimus\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\Onesimus\AppData\Local\Yarn\bin;C:\flutter\bin;C:\Users\Onesimus\AppData\Roaming\npm
 
 Yarn version: 
   1.21.1
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/vue-cli-plugin-vue-router: Not found
+  Error: https://registry.yarnpkg.com/@rmartide%2fvue-google-login: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66056:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140665:22)
       at Request.emit (events.js:310:20)
@@ -39,6 +39,7 @@ npm manifest:
     "dependencies": {
       "core-js": "^3.6.5",
       "vue": "^2.6.11",
+      "vue-router": "^3.5.1",
       "vuetify": "^2.4.0",
       "vuex": "^3.6.2"
     },
@@ -8250,6 +8251,11 @@ Lockfile:
       loader-utils "^1.1.0"
       vue-hot-reload-api "^2.3.0"
       vue-style-loader "^4.1.0"
+  
+  vue-router@^3.5.1:
+    version "3.5.1"
+    resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.1.tgz#edf3cf4907952d1e0583e079237220c5ff6eb6c9"
+    integrity sha512-RRQNLT8Mzr8z7eL4p7BtKvRaTSGdCbTy2+Mm5HTJvLGYSSeG9gDzNasJPP/yOYKLy+/cLG/ftrqq5fvkFwBJEw==
   
   vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
     version "4.1.2"

@@ -86,7 +86,7 @@
 export default {
   components: {
    
-            GoogleLogin
+            // GoogleLogin
   },
    data: () => ({
     name: 'Register',
