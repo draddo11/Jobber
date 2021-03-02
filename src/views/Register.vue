@@ -89,10 +89,10 @@
              <br>
                     or
 
-                  
+                <router-link="/signin">
          
           <v-btn  block  color="grey" >Sign In </v-btn>
-           
+                </router-link>
              </v-col>
         </v-col>
       </v-row>
