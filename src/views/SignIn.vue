@@ -69,7 +69,7 @@
             </v-col>
            <br />
            <span class="text-center" cols="12" sm="12">  or </span>
-
+<GoogleLogin :params="params" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin>
         </v-col>
       </v-row>
     </v-container>
@@ -82,8 +82,12 @@
 
 </style>
 <script>
+ import GoogleLogin from 'vue-google-login';
 export default {
-  components: {},
+  components: {
+   
+            GoogleLogin
+  },
    data: () => ({
     name: 'Register',
     valid: false,
