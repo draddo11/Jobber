@@ -73,6 +73,12 @@
   </v-app>
 </template>
 
+<style scoped>
+ a {
+    text-decoration: none;
+}
+</style>
+
 <script>
 // import Home from './containers/Home';
 // import Counter from './components/Counter';

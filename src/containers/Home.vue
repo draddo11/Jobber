@@ -93,6 +93,12 @@
   </v-container>
 </template>
 
+<style scoped>
+ a {
+    text-decoration: none;
+}
+</style>
+
 <script>
   export default {
     name: 'Home',

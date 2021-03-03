@@ -103,8 +103,8 @@
         </div>
 </template>
 <style scoped>
-#agree{
-  font-size: 13;
+ a {
+    text-decoration: none;
 }
 </style>
 <script>

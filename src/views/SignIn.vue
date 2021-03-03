@@ -79,7 +79,9 @@
         </div>
 </template>
 <style scoped>
-
+a {
+    text-decoration: none;
+}
 </style>
 <script>
 //  import GoogleLogin from 'vue-google-login';
