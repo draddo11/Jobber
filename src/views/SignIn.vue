@@ -63,13 +63,23 @@
              Privacy Policy, and Nondiscrimination Policy </aside> -->
          
         <br />
-        <v-col class="text-center" cols="12" sm="12" 
-         >
+        <v-col class="text-center" cols="12" sm="12" >
+
           <v-btn   block  color="error"> Log In  </v-btn>
+
+        <aside class="text-caption" > 
+           Don't have an account?
+          Either you are a company or a developer, what are you waiting for?</aside>
+<router-link to="register">
+                <br>
+          <v-btn  block  color="primary" >Register </v-btn>
+               </router-link>
+               <br>
+
             </v-col>
-           <br />
+           <!-- <br />
            <span class="text-center" cols="12" sm="12">  or </span>
-<GoogleLogin :params="params" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin>
+<GoogleLogin :params="params" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin> -->
         </v-col>
       </v-row>
     </v-container>
