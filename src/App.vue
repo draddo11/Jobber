@@ -9,7 +9,7 @@
     
     <a >
       <router-link to = "/home">
-      <h3> Jobber</h3>
+      <h3 class="text-center"> Jobber</h3>
       </router-link>
       </a>
       <div class="d-flex align-center">
@@ -42,24 +42,23 @@
           dark
           right
         >
-          mdi-checkbox-marked-circle
+          mdi-account-plus
         </v-icon>
-          <a> Register </a>
+           Register 
         </router-link>
 
 
           <router-link to="/signin">
-
-          <v-btn
-       
-        class="ma- "
-        color="white"
-        plain
-      >
-      
+        <v-icon
+          dark
+          right
+        >
+          mdi-account
+        </v-icon>
+          
         Login
       
-      </v-btn> 
+      
 
         </router-link>
 
