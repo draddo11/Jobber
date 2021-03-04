@@ -85,14 +85,17 @@
             <v-col class="text-center" cols="12" sm="12" 
          >
           <v-btn  block  color="error">Agree and continue </v-btn>
-           
-             <br>
+             <br/>
+            
                     or
-
+             
+            
+              <br>
                 <router-link to="/signin">
-         
-          <v-btn  block  color="grey" >Sign In </v-btn>
+                <br>
+          <v-btn  block  color="primary" >Sign In </v-btn>
                </router-link>
+               <br>
              </v-col>
         </v-col>
       </v-row>
