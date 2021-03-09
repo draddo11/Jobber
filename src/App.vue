@@ -2,9 +2,9 @@
   <v-app>
     <v-app-bar
       app
-      color="black-2"
-      dark
-      dense
+      color="white"
+      
+      
     >
     
     <a >

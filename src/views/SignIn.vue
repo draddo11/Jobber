@@ -66,6 +66,7 @@
         <v-col class="text-center" cols="12" sm="12" >
 
           <v-btn   block  color="error"> Log In  </v-btn>
+          <br />
 
         <aside class="text-caption" > 
            Don't have an account?
