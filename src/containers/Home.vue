@@ -11,6 +11,7 @@
       </v-col>
       <br>
       <br>
+      <br>
 <h2>This is the Home component</h2>
       <!-- <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">

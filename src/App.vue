@@ -3,7 +3,8 @@
     <v-app-bar
       app
       color="white"
-      
+      absolute 
+      flat
       
     >
     
