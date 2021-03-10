@@ -1,27 +1,22 @@
 <template>
- <v-container>
-    <v-img
-  :lazy-src="require('../assets/office.jpg')"
-  max-height="5842"
-  max-width="3895"
-  position= 'center center'
-   gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-   aspect-ratio="2"
-   light
-  :src="require('../assets/office.jpg')"
->
-<br>
-      <br>
-      <br>
-<h2 color="white"
-   position= 'center'
->This is the Home component</h2></v-img>
- 
+  <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-   
+       <v-img
+          :lazy-src="require('../assets/office.jpg')"
+          max-height="5842"
+          max-width="3895"
+          justify= center
+          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+          :src="require('../assets/office.jpg')"
+>
+<h2>This is the Home component</h2>
+
+</v-img>
       </v-col>
-      
+      <br>
+      <br>
+      <br>
 
       <!-- <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
