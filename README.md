@@ -1,6 +1,6 @@
 # Jobber
 
-## lINK : http://jobber.tk/
+## link : http://jobber.tk/
 
 ## Project setup
 ```
