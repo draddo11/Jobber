@@ -67,6 +67,10 @@
 
           <v-btn   block  color="error"> Log In  </v-btn>
           <br />
+          <br />
+              <Gbtn></Gbtn>
+              <br/>
+              <br />
 
         <aside class="text-caption" > 
            Don't have an account?
@@ -95,12 +99,12 @@ a {
 }
 </style>
 <script>
-//  import GoogleLogin from 'vue-google-login';
+  import Gbtn from '../components/Gbtn';
 
 export default {
   components: {
-   
-            // GoogleLogin
+        Gbtn,
+     
   },
    data: () => ({
     name: 'Register',

@@ -111,6 +111,7 @@
 }
 </style>
 <script>
+// import {firebaseApp} from '../'
 export default {
   components: {},
    data: () => ({
