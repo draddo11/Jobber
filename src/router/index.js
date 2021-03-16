@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import {firebaseApp} from '../firebaseApp';
 
 // import Main from "../containers/Main";
 import App from "../App.vue";
@@ -35,6 +36,14 @@ let routes = [
   }
 ];
 
+ firebaseApp.auth().onAuthStateChanged(user => {
+   if (user) {
+     router.push('/home')
+   }else{
+     router.replace('/register')
+   }
+ })
+ 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
