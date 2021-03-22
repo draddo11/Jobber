@@ -120,7 +120,12 @@ export default {
         v => !!v || "Password is required",
         v => (v && v.length >= 6) || "Name must be more than 6 characters"
       ]
-  })
+  }),
+  methods:{
+    signIn(){
+      
+    }
+  }
   
 }
 </script>
