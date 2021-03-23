@@ -65,8 +65,9 @@
         <br />
         <v-col class="text-center" cols="12" sm="12" >
 
-          <v-btn   block  color="error"> Log In  </v-btn>
+          <v-btn @click="signIn()"  block  color="error"> Log In  </v-btn>
           <br />
+          <p class=" grey-2 red--text text--darken-3">{{error.message}}</p>
           <br />
               <Gbtn></Gbtn>
               <br/>
@@ -100,6 +101,7 @@ a {
 </style>
 <script>
   import Gbtn from '../components/Gbtn';
+  import {firebaseApp} from '../firebaseApp'
 
 export default {
   components: {
@@ -119,11 +121,17 @@ export default {
       passwordrules: [
         v => !!v || "Password is required",
         v => (v && v.length >= 6) || "Name must be more than 6 characters"
-      ]
+      ],
+      error:{
+        message:''
+      }
   }),
   methods:{
     signIn(){
-      
+      firebaseApp.auth().signInWithEmailAndPassword(this.email , this.password)
+      .catch(error => {
+        this.error = error 
+      })
     }
   }
   
