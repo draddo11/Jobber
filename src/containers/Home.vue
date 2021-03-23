@@ -4,13 +4,15 @@
       <v-col >
        <v-img
           :lazy-src="require('../assets/character 16.svg')"
-          max-height="720"
-          max-width="700"
+          max-height="1920"
+          max-width="1080"
           justify= left
-          gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+         
           :src="require('../assets/character 16.svg')"
 >
-<h2>This is the Home component</h2>
+<br>
+      <br>
+<h1>Welcome to Jobber </h1>
 
 </v-img>
       </v-col>
