@@ -72,7 +72,7 @@
               <Gbtn></Gbtn>
               <br/>
               <br />
-
+               
         <aside class="text-caption" > 
            Don't have an account?
           Either you are a company or a developer, what are you waiting for?</aside>

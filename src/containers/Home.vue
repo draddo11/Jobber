@@ -13,7 +13,7 @@
 <br>
       <br>
 <h1>Welcome to Jobber </h1>
-
+ {{$store.state}}
 </v-img>
       </v-col>
       <br>

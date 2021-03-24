@@ -40,7 +40,7 @@ let routes = [
    if (user) {
      router.push('/home')
    }else{
-     router.replace('/register')
+     router.replace('/signin')
    }
  })
  
