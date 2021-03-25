@@ -6,4 +6,8 @@ Vue.use(Vuetify);
 export default new Vuetify({
     theme: { dark: false
         },
+        breakpoint: {
+            mobileBreakpoint: 'sm' // This is equivalent to a value of 960
+          },
+        
 });
