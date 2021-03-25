@@ -1,6 +1,7 @@
 # Jobber
-
+## Link to live project 
 ## link : http://jobber.tk/
+## link 2: https://jobbernew.netlify.app/
 
 ## Project setup
 ```
