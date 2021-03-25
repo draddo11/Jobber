@@ -13,7 +13,7 @@
 
   
   
-  <h1 v-text="caption">Signup with us to post and apply for Jobs </h1>
+  <h1 v-text= "caption">Signup with us to post and apply for Jobs </h1>
   
     <br />
     <p class="headline font-weight-black">
