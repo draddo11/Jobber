@@ -49,6 +49,7 @@
           ></v-text-field>
 
             <v-text-field
+            :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
             label=" Password "
             solo 
             placeholder="Password"
@@ -56,6 +57,8 @@
             v-model="password"
             :rules="passwordrules"
             required
+            :type="show ? 'text' : 'password'"
+            @click:append="show = !show"
           ></v-text-field>
 <!--          
           <aside class="text-caption">By selecting Agree and continue below,
@@ -68,7 +71,7 @@
           <v-btn @click="signIn()"  block  color="error"> Log In  </v-btn>
           <br />
           <p class=" grey-2 red--text text--darken-3">{{error.message}}</p>
-          
+
                
         <aside class="text-caption" > 
            Don't have an account?
@@ -98,7 +101,8 @@ a {
 </style>
 <script>
 
-  import {firebaseApp} from '../firebaseApp'
+  import {firebaseApp} from '../firebaseApp';
+  import 'firebase/auth';
 
 export default {
   components: {
@@ -108,7 +112,8 @@ export default {
    data: () => ({
     name: 'Register',
     valid: false,
-    
+        show: true,
+      
     email: '',
     emailRules: [
       v => !!v || 'E-mail is required',

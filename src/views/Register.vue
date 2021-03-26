@@ -111,7 +111,10 @@
 }
 </style>
 <script>
-// import {firebaseApp} from '../'
+
+// import {firebaseApp} from '../firebase'
+// import 'firebase/firebase-auth'
+
 export default {
   components: {},
    data: () => ({
