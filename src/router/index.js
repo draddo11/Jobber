@@ -1,12 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// import {firebaseApp} from '../firebaseApp';
+ import {firebaseApp} from '../firebaseApp';
 
 // import Main from "../containers/Main";
 import App from "../App.vue";
 import SignIn from "../views/SignIn";
 import Register from "../views/Register";
 import Home from "../containers/Home.vue";
+import store from "../store";
 
 Vue.use(VueRouter);
 
@@ -36,13 +37,14 @@ let routes = [
   }
 ];
 
-//  firebaseApp.auth().onAuthStateChanged(user => {
-//    if (user) {
-//      router.push('/home')
-//    }else{
-//      router.replace('/home')
-//    }
-//  })
+ firebaseApp.auth().onAuthStateChanged(user => {
+   if (user) {
+     store.dispatch('signin',user)
+     router.push('/home')
+   }else{
+     router.replace('/signin')
+   }
+ })
  
 const router = new VueRouter({
   mode: "history",
