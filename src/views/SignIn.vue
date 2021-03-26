@@ -68,10 +68,7 @@
           <v-btn @click="signIn()"  block  color="error"> Log In  </v-btn>
           <br />
           <p class=" grey-2 red--text text--darken-3">{{error.message}}</p>
-          <br />
-              <Gbtn></Gbtn>
-              <br/>
-              <br />
+          
                
         <aside class="text-caption" > 
            Don't have an account?
@@ -100,14 +97,14 @@ a {
 }
 </style>
 <script>
-  import Gbtn from '../components/Gbtn';
+
   import {firebaseApp} from '../firebaseApp'
 
 export default {
   components: {
-        Gbtn,
      
   },
+
    data: () => ({
     name: 'Register',
     valid: false,

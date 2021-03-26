@@ -36,7 +36,7 @@
           sm="12"
           md="12"
         >
-        <v-text-field
+        <!-- <v-text-field
           label="First name"
             solo 
             placeholder="FirstName"
@@ -56,7 +56,7 @@
               :rules="nameRules"
               :counter="10"
               required
-          ></v-text-field>
+          ></v-text-field> -->
           <v-text-field
             label="E-mail"
             solo 

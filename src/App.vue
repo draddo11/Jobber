@@ -50,7 +50,8 @@
            Register 
         </router-link>
 
-
+  <!-- <v-btn @click="signOut()"  color="red-4">Sign out </v-btn> -->
+  
           <router-link to="/signin">
         <v-icon
           dark
@@ -64,6 +65,7 @@
       
 
         </router-link>
+      
 
     </v-app-bar>
  <router-view></router-view>
@@ -82,10 +84,8 @@
 </style>
 
 <script>
-// import Home from './containers/Home';
-// import Counter from './components/Counter';
-// import SignIn from './views/SignIn';
-// import Register from './views/Register';
+// import {firebaseApp} from './firebaseApp';
+
 
 export default {
   name: 'App',
@@ -98,10 +98,15 @@ export default {
   },
 
   data:() => ({
-    //
     methods:{
+      // signOut(){
+      //   this.$store.dispatch('signOut')
+      //   firebaseApp.auth().signOut()
+      // },
      disabled: true,
-     loading:true
+     loading:true,
+     
+    
     }
   }),
 };

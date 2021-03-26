@@ -15,14 +15,14 @@
       <br>
 <h1>Welcome to Jobber </h1>
 <br>
-<v-btn @click="signOut"  color="red"> Sign out  </v-btn>
+<v-btn @click="signOut()"  color="blue"> Sign out  </v-btn>
  {{$store.state}}
 </v-img>
       </v-col>
       <br>
       <br>
       <br>
-<v-btn @click="signOut"  color="red-2">Sign out </v-btn>
+<!-- <v-btn @click="signOut"  color="red-2">Sign out </v-btn> -->
       <!-- <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to Vuetify
