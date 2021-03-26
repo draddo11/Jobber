@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <v-row class="text-center">
+      
       <v-col >
        <v-img
           :lazy-src="require('../assets/character 16.svg')"
@@ -13,13 +14,15 @@
 <br>
       <br>
 <h1>Welcome to Jobber </h1>
+<br>
+<v-btn @click="signOut"  color="red"> Sign out  </v-btn>
  {{$store.state}}
 </v-img>
       </v-col>
       <br>
       <br>
       <br>
-
+<v-btn @click="signOut"  color="red-2">Sign out </v-btn>
       <!-- <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
           Welcome to Vuetify
@@ -108,6 +111,8 @@
 </style>
 
 <script>
+import {firebaseApp} from '../firebaseApp'
+
   export default {
     name: 'Home',
 
@@ -163,5 +168,11 @@
         },
       ],
     }),
+    methods:{
+      signOut(){
+        this.$store.dispatch('signOut')
+        firebaseApp.auth().signOut()
+      }
+    }
   }
 </script>
