@@ -14,7 +14,7 @@ import firebase from 'firebase'
   };
   // Initialize Firebase
 //   firebase.initializeApp(firebaseConfig);
-//   firebase.analytics();
+  firebase.analytics();
 
 
 export const firebaseApp =  firebase.initializeApp(firebaseConfig);
