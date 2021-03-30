@@ -13,8 +13,8 @@ import firebase from 'firebase'
     measurementId: "G-HCR87GFV05"
   };
   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
+  // firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+  // App.initializeApp()
 
 export const firebaseApp =  firebase.initializeApp(firebaseConfig);

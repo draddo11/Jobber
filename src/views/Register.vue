@@ -84,7 +84,7 @@
             <br />
             <v-col class="text-center" cols="12" sm="12" 
          >
-          <v-btn  block  color="error">Agree and continue </v-btn>
+          <v-btn type="submit" block  color="error">Agree and continue </v-btn>
              <br/>
             
                     or

@@ -68,7 +68,7 @@
         <br />
         <v-col class="text-center" cols="12" sm="12" >
 
-          <v-btn @click="signIn()"  block  color="error"> Log In  </v-btn>
+          <v-btn @click="signIn()" type="submit" block  color="error"> Log In  </v-btn>
           <br />
           <p class=" grey-2 red--text text--darken-3">{{error.message}}</p>
 
