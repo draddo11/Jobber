@@ -68,6 +68,7 @@
           ></v-text-field>
 
             <v-text-field
+             :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
             label=" Password "
             solo 
             placeholder="Password"
@@ -75,6 +76,8 @@
             v-model="password"
             :rules="passwordrules"
             required
+             :type="show ? 'text' : 'password'"
+            @click:append="show = !show"
           ></v-text-field>
          
           <aside class="text-caption">By selecting Agree and continue below,
@@ -120,6 +123,7 @@ export default {
    data: () => ({
     name: 'Register',
     valid: false,
+    show: true,
     firstname: '',
     lastname: '',
     nameRules: [
