@@ -17,6 +17,8 @@
 <br>
 <v-btn @click="signOut()"  color="blue"> Sign out  </v-btn>
  {{$store.state}}
+
+ <v-btn @click="getJobs"  color="error"> Add Python JOBS  </v-btn>
 </v-img>
       </v-col>
       <br>
@@ -112,6 +114,7 @@
 
 <script>
 import {firebaseApp} from '../firebaseApp'
+import {mapActions} from 'vuex'
 
   export default {
     name: 'Home',
@@ -168,11 +171,14 @@ import {firebaseApp} from '../firebaseApp'
         },
       ],
     }),
-    methods:{
+    methods:
+      mapActions([
+        'getJobs']
+        ),
       signOut(){
         this.$store.dispatch('signOut')
         firebaseApp.auth().signOut()
       }
-    }
+    
   }
 </script>
