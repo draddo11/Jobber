@@ -9,9 +9,13 @@ export const sigOut   = ({commit})=>{
 } 
 
 export const getJobs = ({commit})=>{
-    fetch(`https://jobs.github.com/positions?description=python&location=new+york`,{
+    fetch(`http https://swapi.dev/api/people/1/`,{
         method : 'GET',
-        mode: "no-cors" // 'cors' by defaul
+        mode: "no-cors", // 'cors' by defaul
+        headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }
      }) 
      .then(response => response.json())
       .then(json => commit(types.GET_JOBS,json))
