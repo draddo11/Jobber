@@ -87,7 +87,7 @@
             <br />
             <v-col class="text-center" cols="12" sm="12" 
          >
-          <v-btn type="submit" block  color="error">Agree and continue </v-btn>
+          <v-btn type="submit" block  color="error" @click= "register">Agree and continue </v-btn>
              <br/>
             
                     or
@@ -140,11 +140,16 @@ export default {
         v => !!v || "Password is required",
         v => (v && v.length >= 6) || "Password must be more than 6 characters"
       ]
-  })
+  }),
+  methods:{
+    register(){
+
+    }
+  }
   
 }
 </script>
-
+ 
 <style>
 
 </style>

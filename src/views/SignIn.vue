@@ -103,6 +103,7 @@ a {
 
   import {firebaseApp} from '../firebaseApp';
   import 'firebase/auth';
+  // import {mapActions} from 'vuex'
 
 export default {
   components: {
