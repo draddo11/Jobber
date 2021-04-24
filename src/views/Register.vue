@@ -115,8 +115,8 @@
 </style>
 <script>
 
-// import {firebaseApp} from '../firebase'
-// import 'firebase/firebase-auth'
+import {firebaseApp} from '../firebaseApp'
+import 'firebase/firebase-auth'
 
 export default {
   components: {},
@@ -143,7 +143,10 @@ export default {
   }),
   methods:{
     register(){
-
+      firebaseApp.auth().createUserWithEmailAndPassword(this.email , this.password)
+      .catch(error => {
+        this.error = error 
+      })
     }
   }
   

@@ -14,7 +14,7 @@ Vue.use(VueRouter);
 let routes = [
   {
     path: "/",
-    // redirect: "/home",
+    redirect: "/home",
     name: "App",
     component: App,
     children: [
@@ -39,8 +39,8 @@ let routes = [
 
  firebaseApp.auth().onAuthStateChanged(user => {
    if (user) {
-     store.dispatch('signin',user)
-    //  router.push('/home')
+     store.dispatch('signIn',user)
+    //  router.push('/')
    }else{
      router.replace('/signin')
    }
