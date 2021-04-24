@@ -92,7 +92,7 @@
             
                     or
              
-            
+            <aside class="text-caption">Have an account already ? </aside>
               <br>
                 <router-link to="/signin">
                 <br>
