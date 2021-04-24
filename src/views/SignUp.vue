@@ -91,14 +91,14 @@
              <br/>
             
                     or
-             
+             <router-link to = '/signin'>
             <aside class="text-caption">Have an account already ? </aside>
-              <br>
-                <router-link to="/signin">
+              <br></router-link>
+                <!-- <router-link to="/signin">
                 <br>
           <v-btn  block  color="primary" >Sign In </v-btn>
                </router-link>
-               <br>
+               <br> -->
              </v-col>
         </v-col>
       </v-row>
