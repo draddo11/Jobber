@@ -40,7 +40,7 @@
           <v-spacer ></v-spacer>
       <!-- <v-divider class="horizontal"></v-divider> -->
        <!-- <span></span> -->
-        <router-link to = "/register">
+        <router-link to = "/signUp">
          <v-icon
           dark
           right

@@ -5,7 +5,7 @@ import VueRouter from "vue-router";
 // import Main from "../containers/Main";
 import App from "../App.vue";
 import SignIn from "../views/SignIn";
-import Register from "../views/Register";
+import SignUp from "../views/SignUp";
 import Home from "../containers/Home.vue";
 import store from "../store";
 
@@ -24,9 +24,9 @@ let routes = [
         component: SignIn
       },
       {
-        path: "/register",
-        name: "register",
-        component: Register
+        path: "/signup",
+        name: "signup",
+        component: SignUp
       },
       {
         path: "/home",
