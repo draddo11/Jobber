@@ -76,9 +76,9 @@
         <aside class="text-caption" > 
            Don't have an account?
           Either you are a company or a developer, what are you waiting for?</aside>
-<router-link to="register">
+<router-link to="signup">
                 <br>
-          <v-btn  block  color="primary" >Register </v-btn>
+          <v-btn  block  color="primary" >Sign In </v-btn>
                </router-link>
                <br>
 
