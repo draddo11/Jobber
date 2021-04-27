@@ -123,7 +123,7 @@ export default {
    data: () => ({
     name: 'Register',
     valid: false,
-    show: true,
+    show: false,
     firstname: '',
     lastname: '',
     nameRules: [

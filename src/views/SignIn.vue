@@ -113,7 +113,7 @@ export default {
    data: () => ({
     name: 'Register',
     valid: false,
-        show: true,
+        show: false,
       
     email: '',
     emailRules: [

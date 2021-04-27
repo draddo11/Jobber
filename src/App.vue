@@ -47,7 +47,7 @@
         >
           mdi-account-plus
         </v-icon>
-           Register 
+           SignUp
         </router-link>
 
   <!-- <v-btn @click="signOut()"  color="red-4">Sign out </v-btn> -->
