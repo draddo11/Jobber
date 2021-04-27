@@ -92,6 +92,7 @@
             
                     or
              <router-link to = '/signin'>
+             <p>{{error.message}}</p>
             <aside class="text-caption">Have an account already ? </aside>
               <br></router-link>
                 <!-- <router-link to="/signin">
@@ -121,15 +122,19 @@ import 'firebase/firebase-auth'
 export default {
   components: {},
    data: () => ({
-    name: 'Register',
+    name: 'SignIn',
     valid: false,
     show: false,
-    firstname: '',
-    lastname: '',
-    nameRules: [
-      v => !!v || 'Name is required',
-      v => v.length <= 10 || 'Name must be less than 10 characters'
-    ],
+    // firstname: '',
+    // lastname: '',
+    error:{
+      message:" "
+    },
+    // nameRules: [
+    //   v => !!v || 'Name is required',
+    //   v => v.length <= 10 || 'Name must be less than 10 characters'
+    // ]
+    // ,
     email: '',
     emailRules: [
       v => !!v || 'E-mail is required',

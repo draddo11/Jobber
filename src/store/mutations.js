@@ -8,7 +8,7 @@ export const mutations = {
         state.user={}
     },
 
-    [types.GET_JOBS] (state){
-        state.jobs={}
+    [types.GET_JOBS] (state,jobs_payload){
+        state.jobs=jobs_payload
     },
 }
