@@ -13,8 +13,8 @@ Vue.use(VueRouter);
 
 let routes = [
   {
-    path: "/",
-    redirect: "/home",
+    path: "/home",
+    redirect: "/",
     name: "App",
     component: App,
     children: [
@@ -42,7 +42,7 @@ let routes = [
      store.dispatch('signIn',user)
      router.push('/')
    }else{
-    //  router.replace('/signin')
+     router.replace('/home')
    }
  })
  

@@ -15,10 +15,11 @@
       <br>
 <h1>Welcome to Jobber </h1>
 <br>
-<v-btn @click="signOut()"  color="blue"> Sign out  </v-btn>
+<v-btn @click="signOut"  color="blue"> Sign out  </v-btn>
  {{$store.state}}
 
  <v-btn @click="getJobs"  color="error"> Add Python JOBS  </v-btn>
+ {{$store.state.jobs}}
 </v-img>
       </v-col>
       <br>
@@ -114,7 +115,8 @@
 
 <script>
 import {firebaseApp} from '../firebaseApp'
-import {mapActions} from 'vuex'
+import 'firebase/auth'
+// import {mapActions} from 'vuex'
 
   export default {
     name: 'Home',
@@ -171,14 +173,14 @@ import {mapActions} from 'vuex'
         },
       ],
     }),
-    methods:
-      mapActions([
-        'getJobs']
-        ),
+    methods:{
       signOut(){
         this.$store.dispatch('signOut')
         firebaseApp.auth().signOut()
-      }
-    
+      },
+      // mapActions(
+      //   'getJobs'
+      //  )
+    }
   }
 </script>
