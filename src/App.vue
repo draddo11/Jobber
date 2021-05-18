@@ -84,7 +84,7 @@
 </style>
 
 <script>
-// import {firebaseApp} from './firebaseApp';
+import {firebaseApp} from './firebaseApp';
 
 
 export default {
@@ -99,10 +99,10 @@ export default {
 
   data:() => ({
     methods:{
-      // signOut(){
-      //   this.$store.dispatch('signOut')
-      //   firebaseApp.auth().signOut()
-      // },
+      signOut(){
+        this.$store.dispatch('signOut')
+        firebaseApp.auth().signOut()
+      },
      disabled: true,
      loading:true,
      
