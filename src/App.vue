@@ -17,7 +17,7 @@
       <h3 class="text-center"> Jobber</h3>
       </router-link>
       </a>
-      <div class="d-flex align-center">
+      <!-- <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
@@ -34,8 +34,8 @@
           min-width="100"
           src="require('../assets/character 16.svg')"
           width="100"
-        />
-      </div>
+        /> -->
+      <!-- </div> -->
         
       
          
@@ -76,11 +76,43 @@
       absolute
       bottom
       temporary
+      color="black"
     >
     <v-list
         nav
         dense
       >
+      <v-list-item-group
+          v-model="group"
+          active-class="black"
+        >
+        <v-list-item>
+          <router-link to = "/signup">
+         <v-icon
+          dark
+          right
+        >
+          mdi-account-plus
+        </v-icon>
+           SignUp
+        </router-link>
+          </v-list-item>
+        <v-list-item>
+           <router-link to="/signin">
+        <v-icon
+          dark
+          right
+        >
+          mdi-account
+        </v-icon> 
+          
+         Login 
+      
+      
+
+        </router-link>
+         </v-list-item>
+        </v-list-item-group>
       </v-list>
       </v-navigation-drawer>
  <router-view></router-view>
@@ -114,15 +146,16 @@ export default {
   },
 
   data:() => ({
+    disabled: true,
+     loading:true,
+      drawer: false,
+      group: null,
     methods:{
       signOut(){
         this.$store.dispatch('signOut')
         firebaseApp.auth().signOut()
       },
-     disabled: true,
-     loading:true,
-      drawer: false,
-      group: null,
+     
     
     },
      watch: {
