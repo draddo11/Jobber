@@ -1,13 +1,11 @@
 <template>
 
   <v-container>
-    <App/>
+  
     <v-row class="text-center">
       
       <v-col >
        
-<br>
-      <br>
 <h1>Welcome to Jobber </h1>
 <br>
 <v-btn @click="signOut"  color="blue"> Sign out  </v-btn>
@@ -15,22 +13,17 @@
 
  <v-btn @click="getJobs"  color="error"> Add Python JOBS  </v-btn>
  {{$store.state.jobs}}
-
-      </v-col>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <v-img
+ <v-img
            contain 
           :lazy-src="require('../assets/character 16.svg')"
-          max-height="350"
-          max-width="500"
+          max-height="300"
+          max-width="200"
           position = right
          
           :src="require('../assets/character 16.svg')"
 />
+      </v-col>
+     
 
 
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nobis eligendi nisi, odit quod saepe eveniet nulla? Quos sit aliquid vero quam, labore excepturi facilis ullam, ut, soluta expedita voluptas accusamus! Fuga minus vitae eveniet illum voluptas, molestias tempore, accusamus sint maiores, minima laudantium delectus ipsam eius magni optio vero laborum! Iure explicabo iusto similique, fuga nemo ad dolor fugiat neque, facere praesentium vitae modi atque quas est ipsa, laudantium labore assumenda voluptatem sunt eveniet eius! Ipsum quaerat corporis dolorem atque voluptates ullam magni rerum provident, enim corrupti iusto iste tempore dolor sit quos totam voluptatem modi nam ducimus. Consectetur, ipsam blanditiis veritatis id harum culpa ad est quia non a aspernatur, exercitationem corrupti. Sequi, ipsa! Quibusdam deleniti, sed placeat, cum voluptate quidem sit totam doloribus quae sunt magnam! Blanditiis cupiditate ipsum aperiam reiciendis quis nulla, necessitatibus adipisci atque! Modi blanditiis porro dignissimos tempore eaque doloribus reprehenderit mollitia aliquam voluptatibus natus nesciunt, fugit eum? Nihil distinctio similique labore accusantium beatae et perspiciatis minus animi est voluptatibus aspernatur hic, ea saepe reiciendis possimus iste. Id qui tempora, totam repellendus eligendi optio at dolores vel! Libero, vel? Alias voluptatum ab sed dolor doloribus molestiae facilis quae molestias perferendis, praesentium veritatis. Mollitia minima tempora incidunt et doloribus obcaecati aut deserunt aspernatur assumenda repudiandae, praesentium recusandae voluptates ratione dignissimos id commodi quia reiciendis itaque, architecto at suscipit. Nihil repellat maxime ratione natus vitae perspiciatis, aliquam quo doloribus officia aspernatur nulla saepe, autem illum dolor illo animi quis, nobis soluta omnis alias delectus eaque est! Consequatur quam est modi soluta eius aliquid temporibus possimus qui alias fugiat corporis, voluptas porro nam delectus perferendis voluptate amet culpa nobis esse. Ullam dolorum cupiditate aspernatur magnam, neque ipsa nam excepturi omnis reiciendis non quo a ducimus voluptates. Neque sed atque, fugit, sint ab blanditiis ipsam saepe inventore natus maxime rem. Expedita modi itaque repellat nam repellendus nostrum, placeat dignissimos iste distinctio ex fugit blanditiis libero molestias minima corrupti perspiciatis dolore omnis deleniti iure dolor cumque! Maxime libero obcaecati vel officiis commodi nobis veniam suscipit minus, aliquam quibusdam itaque fuga, cum odit nisi, perferendis temporibus asperiores sapiente! Dolor, pariatur numquam, quos provident iure fuga a molestiae incidunt neque sed enim totam aperiam temporibus impedit dolores tenetur aliquid assumenda vel veritatis quae consectetur cumque repellat possimus. Quidem iste incidunt asperiores quo, earum tempora cumque nam, animi saepe in mollitia nostrum. Ipsam, aut quam similique culpa illum blanditiis sapiente iure tempora.
@@ -126,11 +119,11 @@ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel nobis eligendi nis
 import {firebaseApp} from '../firebaseApp'
 import 'firebase/auth'
 // import {mapActions} from 'vuex'
-import App from '../App'
+// import App from '../App'
 
   export default {
     components:{
-     App
+    //  App
 },
     name: 'Home',
 

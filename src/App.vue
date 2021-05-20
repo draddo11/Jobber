@@ -3,13 +3,11 @@
    
     <v-app-bar
       app
-      color="white"
-    collapse-on-scroll
-
-      flat
-      
+      color="grey"
+      collapse-on-scroll
+      raised
     >
-    
+ 
     
     <a >
       <router-link to = "/home">
@@ -51,7 +49,7 @@
            SignUp
         </router-link>
 
-  <v-btn @click="signOut()"  color="red-4">Sign out </v-btn>
+   <!-- <v-btn @click="signOut()"  color="red-4">Sign out </v-btn> -->
   
           <router-link to="/signin">
         <v-icon
@@ -59,9 +57,9 @@
           right
         >
           mdi-account
-        </v-icon>
+        </v-icon> 
           
-        Login
+         Login 
       
       
 
