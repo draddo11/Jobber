@@ -5,8 +5,11 @@
       app
       color="black"
       collapse-on-scroll
-      raised
+      
+       dark
+      
     >
+    <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
  
     
     <a>
@@ -67,6 +70,19 @@
       
 
     </v-app-bar>
+
+     <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
+    >
+    <v-list
+        nav
+        dense
+      >
+      </v-list>
+      </v-navigation-drawer>
  <router-view></router-view>
     <v-main>
        <div class="d-flex align-center">
@@ -105,9 +121,15 @@ export default {
       },
      disabled: true,
      loading:true,
-     
+      drawer: false,
+      group: null,
     
-    }
+    },
+     watch: {
+      group () {
+        this.drawer = false
+      },
+    },
   }),
 };
 </script>
