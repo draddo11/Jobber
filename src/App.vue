@@ -4,7 +4,8 @@
     <v-app-bar
       app
       color="white"
-      absolute 
+    collapse-on-scroll
+
       flat
       
     >
@@ -50,7 +51,7 @@
            SignUp
         </router-link>
 
-  <!-- <v-btn @click="signOut()"  color="red-4">Sign out </v-btn> -->
+  <v-btn @click="signOut()"  color="red-4">Sign out </v-btn>
   
           <router-link to="/signin">
         <v-icon
