@@ -3,13 +3,13 @@
    
     <v-app-bar
       app
-      color="grey"
+      color="black"
       collapse-on-scroll
       raised
     >
  
     
-    <a >
+    <a>
       <router-link to = "/home">
       <h3 class="text-center"> Jobber</h3>
       </router-link>
@@ -19,7 +19,7 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="require('../assets/character 16.svg')"
           transition="scale-transition"
           width="40"
         />
@@ -29,7 +29,7 @@
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          src="require('../assets/character 16.svg')"
           width="100"
         />
       </div>
@@ -79,6 +79,7 @@
 <style scoped>
  a {
     text-decoration: none;
+    color:brown;
 }
 </style>
 
