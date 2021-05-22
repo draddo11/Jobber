@@ -107,10 +107,17 @@
         </v-icon> 
           
          Login 
-      
-      
 
         </router-link>
+         </v-list-item>
+         <v-list-item>
+         <v-btn  @click="signOut" > Sign out  </v-btn>
+          <v-icon
+          dark
+          right
+        >
+          mdi-exit-to-app
+        </v-icon> 
          </v-list-item>
         </v-list-item-group>
       </v-list>
