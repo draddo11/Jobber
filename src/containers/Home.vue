@@ -1,5 +1,4 @@
 <template>
-
   <v-container>
   
     <v-row class="text-center">
@@ -13,9 +12,9 @@
  {{$store.state}}
 
  <!-- <v-btn @click="getJobs"  color="error"> Add Python JOBS  </v-btn> -->
- {{$store.state.jobs}}
+ {{$store.state.job}}
  <v-img
-           contain 
+          contain 
           :lazy-src="require('../assets/character 16.svg')"
           max-height="550"
           max-width="200"
