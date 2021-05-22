@@ -110,7 +110,7 @@
         </router-link>
          </v-list-item>
          <v-list-item>
-         <v-btn  @click="signOut" > Sign out  </v-btn>
+         <!-- <v-btn  @click="signOut" > Sign out  </v-btn> -->
           <v-icon
           dark
           right

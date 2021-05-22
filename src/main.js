@@ -4,6 +4,7 @@ import vuetify from './plugins/vuetify';
 import store from './store';
 import  router from './router';
 import {firebaseApp} from './firebaseApp';
+import './assets/global.css';
 
 
 
