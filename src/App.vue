@@ -5,8 +5,7 @@
       app
       color="black"
       collapse-on-scroll
-      
-       dark
+      dark
       
     >
     <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -39,7 +38,7 @@
         
       
          
-          <v-spacer ></v-spacer>
+      <v-spacer ></v-spacer>
       <!-- <v-divider class="horizontal"></v-divider> -->
        <!-- <span></span> -->
         <router-link to = "/signup">
@@ -139,7 +138,7 @@
 </style>
 
 <script>
-import {firebaseApp} from './firebaseApp';
+// import {firebaseApp} from './firebaseApp';
 
 
 export default {
@@ -157,11 +156,12 @@ export default {
      loading:true,
       drawer: false,
       group: null,
+
     methods:{
-      signOut(){
-        this.$store.dispatch('signOut')
-        firebaseApp.auth().signOut()
-      },
+      // signOut(){
+      //   this.$store.dispatch('signOut')
+      //   firebaseApp.auth().signOut()
+      // },
      
     
     },

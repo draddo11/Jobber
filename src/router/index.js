@@ -39,7 +39,7 @@ let routes = [
 
  firebaseApp.auth().onAuthStateChanged(user => {
    if (user) {
-     store.dispatch('signIn',user)
+     store.dispatch('signin',user)
      router.push('/signup')
    }else{
      router.replace('/home')
