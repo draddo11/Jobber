@@ -14,7 +14,7 @@ Vue.use(VueRouter);
 let routes = [
   {
     path: "/",
-    redirect: "/",
+    // redirect: "/"
     name: "App",
     component: App,
     children: [
