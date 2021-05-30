@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ed768534-4fdc-4219-a058-31b5c114047f/deploy-status)](https://app.netlify.com/sites/jobbernew/deploys)
+
+
 # Jobber
 ## Link to live project 
 ## link : http://jobber.tk/
