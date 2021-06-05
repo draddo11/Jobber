@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
  import {firebaseApp} from '../firebaseApp';
 
-// import Main from "../containers/Main";
+import Postjob from '../views/Postjob.vue'
 import App from "../App.vue";
 import SignIn from "../views/SignIn";
 import SignUp from "../views/SignUp";
@@ -32,6 +32,11 @@ let routes = [
         path: "/home",
         name: "home",
         component: Home
+      },
+      {
+        path: "/post",
+        name: "post",
+        component: Postjob
       },
     ]
   }
