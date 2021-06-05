@@ -17,7 +17,7 @@
   
     <br />
     <p class="headline font-weight-black">
-      Sign In to manage your current Job board
+      Post a job
     </p>
     <!-- <p class="caption font-weight-medium">
       By continuing, you agree to our Terms of Use and Privacy Policy
@@ -26,7 +26,8 @@
 </v-col>
    <v-card
     class="mx-auto"
-    max-width="344"
+    max-width="450"
+    width='500'
     outlined
   >
   <v-form>
@@ -39,54 +40,45 @@
         >
         
           <v-text-field
-            label="E-mail"
+            label=" company name"
             solo 
-            placeholder="Email"
+            placeholder="company name"
             dense
-             v-model="email"
-              :rules="emailRules"
-              required
+             
           ></v-text-field>
 
             <v-text-field
-            :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
-            label=" Password "
+        
+            label=" job title "
             solo 
-            placeholder="Password"
-            dense
-            v-model="password"
-            :rules="passwordrules"
-            required
-            :type="show ? 'text' : 'password'"
-            @click:append="show = !show"
+            placeholder="Job title : Software Engineer"
+            
           ></v-text-field>
-<!--          
-          <aside class="text-caption">By selecting Agree and continue below,
-             I agree to Jobber’s Terms of Service, Payments Terms of Service, 
-             Privacy Policy, and Nondiscrimination Policy </aside> -->
          
-        <br />
-        <v-col class="text-center" cols="12" sm="12" >
+          
+          <v-form
+        
+            label=" job description "
+            solo 
+            placeholder="Job title : Software Engineer"
+            
+          >  
+          </v-form>
 
-          <v-btn @click="signIn()" type="submit" block  color="error"> Log In  </v-btn>
-          <br />
-          <p class=" grey-2 red--text text--darken-3">{{error.message}}</p>
+         
 
                
-        <aside class="text-caption" > 
-           Don't have an account?
-          Either you are a company or a developer, what are you waiting for?</aside>
-<router-link to="signup">
+       
+<router-link to="home">
                 <br>
-          <v-btn  block  color="primary" >Sign In </v-btn>
+          <v-btn  block  color="red" >Post Job </v-btn>
                </router-link>
                <br>
 
             </v-col>
-           <!-- <br />
-           <span class="text-center" cols="12" sm="12">  or </span>
-<GoogleLogin :params="params" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin> -->
-        </v-col>
+        
+         
+        <!-- </v-col> -->
       </v-row>
     </v-container>
   </v-form>
@@ -115,16 +107,8 @@ export default {
     valid: false,
         show: false,
       
-    email: '',
-    emailRules: [
-      v => !!v || 'E-mail is required',
-      v => /.+@.+/.test(v) || 'E-mail must be valid'
-    ],
-      password: '',
-      passwordrules: [
-        v => !!v || "Password is required",
-        v => (v && v.length >= 6) || "Password must be more than 6 characters"
-      ],
+   
+     
       error:{
         message:''
       }
